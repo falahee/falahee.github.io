@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,600italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="thttps://www.dropbox.com/s/k3zvd144areyz0l/stylesheet%21%21%21%21%21?dl=0">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Oswald);
+        @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+        html, body {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing:0.5px;
+        background-color:#e5e5e5;
+        margin:0px;
+        padding:0px;
+        overflow-x:hidden;
+        }
+a{
+color:#444444;
+font-weight:bold;
+text-decoration:none;
+}
+
+
+body {
+  color: #8f8f8f;
+  background: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  color:#fa424d;
+  font-size: 30px;
+  line-height: 1.8;
+  margin-left:-10px;
+  letter-spacing:-1px;
+  padding-left:00px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+#po {
+  box-sizing: border-box;
+  font-family:'Source Sans Pro', sans-serif;
+  margin-bottom: 20px;
+  font-size: 17px;
+  color:#222;
+  padding:8px;
+  line-height: 1.8;
+}
+#po span {
+  box-sizing: border-box;
+  font-weight:600;
+  color:#fa424d;
+  padding:8px;
+  display: inline;
+}
+#po h3 {
+  box-sizing: border-box;
+  text-align:center;
+}
+#po h4 {
+  box-sizing: border-box;
+  text-transform:uppercase;
+  font-size:19px;
+  font-weight:900;
+  line-height:.2;
+  letter-spacing: -1px;
+}
+.main_h {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0px;
+  padding-top: 17px;
+  margin-bottom:17px;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 937px) {
+  .main_h {
+    padding-top: 25px;
+  }
+}
+
+.open-nav {
+  box-sizing: border-box;
+  max-height: 400px !important;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  top: 0px;
+  box-shadow:0px 5px 10px #bbb;
+}
+
+.logo {
+  box-sizing: border-box;
+  width: 250px;
+  margin-left:10%;
+  font-size:24px;
+  padding-top:0px;
+  opacity:1;
+  color: #333;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  float: left;
+  display: block;
+  margin: auto;
+  letter-spacing:-1px;
+  font-weight:700;
+  line-height:36px;
+}
+.logo img{
+  box-sizing: border-box;
+  float:left;
+  margin-top:-2px;
+  margin-right:6px;
+  height:40px;
+  border-radius:0px;
+}
+@media only screen and (max-width: 937px) {
+  .logo {
+    margin-top:-6px;
+    float: none;
+  }
+}
+
+nav {
+  box-sizing: border-box;
+  float: right;
+  width: 60%;
+}
+@media only screen and (max-width: 937px) {
+  nav {
+    width: 100%;
+  }
+}
+nav ul {
+  box-sizing: border-box;
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+margin:auto;
+background-color: rgba(255,255,255,1);
+text-align:right;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 937px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul li {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: rgba(255,255,255,1);
+  margin-left: 15px;
+}
+@media only screen and (max-width: 937px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+}
+nav ul a {
+  box-sizing: border-box;
+font-size: 16px;
+display:inline-block;
+color:#aaaaaa;
+padding:10px 0px 21px 0px;
+margin: 0 0px;
+background-color: rgba(255,255,255,1);
+font-weight:500;
+text-transform:capitalize;
+border-bottom:3px solid transparent;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+nav ul a:hover {
+  box-sizing: border-box;
+
+text-decoration:none;
+color:#444;
+background-color: rgba(255,255,255,1);
+border-bottom:3px solid #427fed;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+.mobile-toggle {
+  box-sizing: border-box;
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 5px;
+  width: 30px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 937px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+.mobile-toggle span {
+  box-sizing: border-box;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+.row {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+
+.content {
+  box-sizing: border-box;
+  padding: 50px 2% 250px;
+}
+
+.hero {
+  box-sizing: border-box;
+  position: relative;
+  background: url(http://static.tumblr.com/d1e9bc9eb4ad2514cf63d69fa3401977/jpnjrln/J47onyodm/tumblr_static_2783hy2uvs2s4wsc44s8oo8sc.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  min-width:250px;
+  color: #fff;
+  padding-top: 112px;
+  min-height: 700px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+.hero h1 {
+  box-sizing: border-box;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0px 0px 5px #222;
+  letter-spacing: -2px;
+  line-height: 1.2;
+}
+.hero h1 span {
+  letter-spacing: -1.5px;
+  font-size: 22px;
+  text-align: center;
+  color: #b2c9ff;
+  font-weight:400;
+  line-height:3.1;
+  display:inline;
+  padding: 12px 17px 0 17px;
+}
+.divider {
+  box-sizing: border-box;
+  margin-left:20%;
+  margin-top:6px;
+  margin-bottom:-10px;
+  height:2px;
+  width:60%;
+  background-color:#b2c9ff;
+}
+@media only screen and (max-width: 937px) {
+  .hero h1 {
+    padding:8px;
+    font-size: 37px;
+    text-shadow: 0px 0px 5px #222;
+    letter-spacing: -1.5px;
+    line-height: 1;
+
+  }
+  .hero h1 span {
+    letter-spacing: -1.5px;
+    font-size: 20px;
+    color: #b2c9ff;
+    font-weight:400;
+    line-height:.1;
+    margin-top:-20px;
+    padding: 12px 17px 0 17px;
+  }
+.divider {
+    margin-left:10%;
+    width:80%;
+    margin-bottom:0px;
+  }}
+  @media only screen and (max-width: 437px) {
+  .hero {
+
+    padding-top: 62px;
+    min-height: 700px;
+    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
+  }
+  }
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+
+
+.wrap {
+  height: 38px;
+  width: 156px;
+  margin: auto;
+  position: absolute;
+  top: 540px;
+  bottom: 0;
+  right: 12px;
+}
+
+@media only screen and (max-width: 867px) {
+  .wrap {
+    left:0;
+    padding-left:40px;
+    top:270px;
+    right:0;
+  }
+}
+@media only screen and (max-width: 367px) {
+  .wrap {
+    left:0;
+    padding-left:40px;
+    top:480px;
+    right:0;
+  }
+}
+@media only screen and (max-width: 267px) {
+  .wrap {
+    left:0;
+    padding-left:40px;
+    top:510px;
+    right:0;
+  }
+}
+.btn a {
+  height: 30px;
+  width: 30px;
+  margin: 5px 3px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  clear: none;
+  display:inline-block;
+  box-shadow: 0 0 0 1px #fff;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.btn .fa {
+  padding: 0;
+  display:inline-block;
+  margin-right: -1px;
+}
+.btn a, .fa a {
+display:inline-block;
+  color:#fff;
+}
+.btn.btn-one a:hover {
+  box-shadow: 0 0 0 4px #3b5998;
+  color: #3b5998;
+}
+.btn-two {
+  margin-top:-40px;
+  margin-left:40px;
+}
+.btn.btn-two a:hover {
+  box-shadow: 0 0 0 4px #00aced;
+  color: #00aced;
+}
+.btn-three {
+  margin-top:-40px;
+  margin-left:80px;
+}
+.btn.btn-three a:hover {
+  box-shadow: 0 0 0 4px #b2f2ff;
+  color: #b2f2ff;
+}
+  .links {
+  box-sizing:content-box;
+  font-family: "Oswald", Arial, sans-serif;
+    width: 90%;
+    padding-top:299px;
+    margin-left:44px;
+
+  }
+  @media only screen and (max-width: 937px) {
+  .links {
+  box-sizing:content-box;
+  font-family: "Oswald", Arial, sans-serif;
+    width: 90%;
+    text-align:center;
+    padding-top:99px;
+    margin:auto;
+
+  }
+  }
+  @media only screen and (max-width: 437px) {
+  .links {
+  box-sizing:content-box;
+  font-family: "Oswald", Arial, sans-serif;
+    width: 90%;
+    text-align:center;
+    padding-top:21px;
+    margin:auto;
+
+  }
+  }
+  .link {
+  text-align:center;
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 34px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+    position: relative;
+  }
+  .link span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .opacity {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .opacity {
+    -webkit-transition: background-color 0.3s linear, color 0.3s linear;
+    transition: background-color 0.3s linear, color 0.3s linear;
+    background: rgba(255, 255, 255, 0);
+  }
+  .opacity:hover {
+    color: #124a58;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+
+  .underline {
+    border: 2px solid transparent;
+  }
+  .underline::after {
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    content: " ";
+    position: absolute;
+    top: 34px;
+    left: 50%;
+    -webkit-transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .underline:hover::after {
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    content: " ";
+    position: absolute;
+    top: 34px;
+    left: 0;
+  }
+
+        </style>
+    </head>
+    <body>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+
+
+    <header class="main_h">
+
+        <div class="row">
+          <a class="logo" href="#"><img src="https://secure.static.tumblr.com/07681cc94ebd5a071d06fea58d13186e/jpnjrln/AGDomnniz/tumblr_static_cp7yqf3fom0c0kc8k84gosoco.png">March for Science</a>
+
+
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href=".sec01">About</a></li>
+                    <li><a href=".sec02">Contact</a></li>
+                    <li><a href=".sec03">Help Out</a></li>
+                    <li><a href=".sec04">Apparel</a></li>
+                </ul>
+            </nav>
+
+        </div> <!-- / row -->
+
+    </header>
+
+    <div class="hero">
+
+        <h1>March for Science - Ann Arbor, MI<br><div class="divider"></div><span>April 22 on the Diag, 12-2 PM</span></h1>
+
+    <section class="links">
+    <a class="link underline" href="https://www.facebook.com/groups/1848627885380815/">Volunteer</a>
+    <a class="link underline" href="https://a2science.itemorder.com/sale">Apparel</a>
+    <a class="link underline" href="http://bit.us15.list-manage.com/subscribe?u=07396a317e205d16bf153dec2&id=28ee5732c0">Newsletter</a>
+    </section>
+
+
+        </div>
+    <div class='wrap'>
+      <div class='btn btn-one'>
+        <a href="https://www.facebook.com/events/1237144609734310/"><i class='fa fa-facebook'></i></a>
+      </div>
+      <div class='btn btn-two'>
+        <a href="https://twitter.com/ScienceMarchA2"><i class='fa fa-twitter'></i></a>
+      </div>
+      <div class='btn btn-three'>
+        <a href="mailto:MarchForScienceA2@gmail.com"><i class='fa fa-envelope'></i></a>
+      </div>
+    </div>
+
+    <div class="row content">
+        <h2 class="sec01">About</h2>
+        <div id="po"><h3> The Ann Arbor March For Science will take place from noon to 2 pm on April 22, 2017. We will be starting at the Diag.</h3>
+          March For Science - Ann Arbor is for anyone who is excited by science. We are more than just scientists and engineers - we are hobbyists, students, teachers, enthusiasts, and people like you.
+    <br>
+    We are organizing a family-friendly, non-partisan, educational event to raise awareness of the contributions of science to society, and the importance of supportive public policy. We will be standing for our community, health, economy and our region's future, while demonstrating Ann Arbor's leadership in science among over 300 Marches For Science around America and across the world.
+    <br>
+    These marches and rallies are intended to unite us within the scientific community, both degree wielding scientists and science advocates alike. From the men and women sporting PhDs to the young adolescents doing CoCoRaHS reporting and looking through backyard telescopes, and all in between, <b>let us set aside our differences and come together as one, unified, scientific community. We believe in empirical science and that it should play a fundamental role in determining governmental policy.</b>
+    <br>So, basically - <br><center>
+    Do you like medicine? March.<br>
+    Do you like air conditioning? March.<br>
+    Do you like cars? March.<br>
+    Do use the internet? March.<br>
+    Do you like smart phones? March.<br>
+    Do you like Velcro? March.</center></div>
+        <h2 class="sec02">Contact</h2>
+        <div id="po"><h4> Reach out to us!</h4>
+          For the Facebook event, click <a href="https://www.facebook.com/events/1237144609734310/">here</a>.
+          <br>For the Facebook volunteering group, click <a href="https://www.facebook.com/groups/1848627885380815/">here</a>.
+          <br><a href="https://twitter.com/ScienceMarchA2">This</a> is our official Twitter account.
+          <br>Subscribe to our newsletter <a href="http://bit.us15.list-manage.com/subscribe?u=07396a317e205d16bf153dec2&id=28ee5732c0">here</a>.
+          <br>Email us at <a href="mailto:MarchForScienceA2@gmail.com">MarchForScienceA2@gmail.com</a>.
+          <br></div>
+        <h2 class="sec03">Help Out</h2>
+        <div id="po"><h4>Do you want to help?</h4>
+          We are seeking marchers, volunteers, and organizers to all help make this a successful event. Help in any capacity would be much appreciated, and we encourage you to reach out to us.
+          <br> <a href="https://www.facebook.com/events/1237144609734310/">March with us</a><br><a href="https://docs.google.com/forms/d/e/1FAIpQLSeq4rfgETo3rI3uHGCQwhn2bxIsnxZfSmy9Kck3CEXyPa1JGA/viewform?c=0&w=1">Volunteer</a>
+</div>
+        <h2 class="sec04">Apparel</h2>
+        <div id="po">Uh so this closes April 9th so just don't include? Ask about this<br><br><br>
+          <img src="https://assetly.ordermygear.com/images/w_300,h_300,c_pad/58cfe80a08cba6775b8b45e3.png"></div>
+    </div>
+    <script>
+    // Sticky Header
+    $(window).scroll(function() {
+
+        if ($(window).scrollTop() > 700) {
+            $('.main_h').addClass('sticky');
+        } else {
+            $('.main_h').removeClass('sticky');
+        }
+    });
+
+    // Mobile Navigation
+    $('.mobile-toggle').click(function() {
+        if ($('.main_h').hasClass('open-nav')) {
+            $('.main_h').removeClass('open-nav');
+        } else {
+            $('.main_h').addClass('open-nav');
+        }
+    });
+
+    $('.main_h li a').click(function() {
+        if ($('.main_h').hasClass('open-nav')) {
+            $('.navigation').removeClass('open-nav');
+            $('.main_h').removeClass('open-nav');
+        }
+    });
+
+    // navigation scroll lijepo radi materem
+    $('nav a').click(function(event) {
+        var id = $(this).attr("href");
+        var offset = 70;
+        var target = $(id).offset().top - offset;
+        $('html, body').animate({
+            scrollTop: target
+        }, 500);
+        event.preventDefault();
+    });</script>
+    </body>
+</html>
