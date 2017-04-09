@@ -42,7 +42,6 @@ h2 {
   line-height: 1.8;
   margin-left:-10px;
   letter-spacing:-1px;
-  padding-left:00px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
 }
@@ -55,13 +54,7 @@ h2 {
   padding:8px;
   line-height: 1.8;
 }
-#po span {
-  box-sizing: border-box;
-  font-weight:600;
-  color:#fa424d;
-  padding:8px;
-  display: inline;
-}
+
 #po h3 {
   box-sizing: border-box;
   text-align:center;
@@ -503,8 +496,30 @@ display:inline-block;
     letter-spacing: 0.1em;
     text-align: center;
     font-size: 1rem;
-    margin: 10px;
+    margin: 10px 5px;
     position: relative;
+  }
+  .link1 {
+  text-align:center;
+  color: #4d42fa;
+  font-family: "Oswald", Arial, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    width: 168px;
+    height: 34px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4d42fa;
+    letter-spacing: 0.1em;
+    text-align: center;
+    float:right;
+    font-size: 1rem;
+    margin: 10px 5px;
+    position: relative;
+  }
+  .link1 a {
+    color: #4d42fa;
   }
   .link span {
     position: absolute;
@@ -514,9 +529,16 @@ display:inline-block;
     left: 0;
     text-align: center;
   }
-
-  .opacity {
-    border: 2px solid #fff;
+  .link1 span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+  .opacity, .slide {
+    border: 2px solid #4d42fa;
     border-radius: 4px;
     overflow: hidden;
   }
@@ -527,8 +549,8 @@ display:inline-block;
     background: rgba(255, 255, 255, 0);
   }
   .opacity:hover {
-    color: #124a58;
-    background: rgba(255, 255, 255, 0.9);
+    color: #fff;
+    background: #4d42fa;
   }
 
 
@@ -557,14 +579,60 @@ display:inline-block;
     top: 34px;
     left: 0;
   }
-
+h6 {
+  width:70%;
+  font-weight:500;
+  font-size: 17px;
+}
+#box {
+  width:40%;
+  margin-top:-260px;
+  float:right;
+  margin-right:0;
+}
+#info {
+  overflow:hidden;
+  text-align:center;
+  width:300px;
+  margin-top:-30px;
+  opacity:0;
+  position:absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#capt {
+  float: left;
+  opacity:1;
+  width:300px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-align:center;
+}
+#capt:hover #info {opacity:1;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;}
+#righter {
+  text-align: center;
+  margin-left:320px;
+}
         </style>
     </head>
     <body>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/easing/EasePack.min.js"></script>
     <header class="main_h">
 
         <div class="row">
@@ -598,6 +666,7 @@ display:inline-block;
     <a class="link underline" href="https://www.facebook.com/groups/1848627885380815/">Volunteer</a>
     <a class="link underline" href="https://a2science.itemorder.com/sale">Apparel</a>
     <a class="link underline" href="http://bit.us15.list-manage.com/subscribe?u=07396a317e205d16bf153dec2&id=28ee5732c0">Newsletter</a>
+    <a class="link underline" href="https://www.gofundme.com/march-for-science-ann-arbor">Donate</a>
     </section>
 
 
@@ -639,13 +708,17 @@ display:inline-block;
           <br></div>
         <h2 class="sec03">Help Out</h2>
         <div id="po"><h4>Do you want to help?</h4>
-          We are seeking marchers, volunteers, and organizers to all help make this a successful event. Help in any capacity would be much appreciated, and we encourage you to reach out to us.
-          <br> <a href="https://www.facebook.com/events/1237144609734310/">March with us</a><br><a href="https://docs.google.com/forms/d/e/1FAIpQLSeq4rfgETo3rI3uHGCQwhn2bxIsnxZfSmy9Kck3CEXyPa1JGA/viewform?c=0&w=1">Volunteer</a>
-</div>
+        <h6>  We are seeking marchers, volunteers, and organizers to all help make this a successful event. Help in any capacity would be much appreciated and we encourage you to reach out to us. To plan this march, we need and appreciate your support. If any money is left over after the march has ended, it will be donated to a yet-to-be-determined non-profit group that supports the quest for scientific knowledge and the curiosity of kids.</h6>
+
+          <br> <div id="box">
+            <a class="link1 opacity" href="https://docs.google.com/forms/d/e/1FAIpQLSeq4rfgETo3rI3uHGCQwhn2bxIsnxZfSmy9Kck3CEXyPa1JGA/viewform?c=0&w=1">Volunteer</a><br>
+            <a id="slide-link" class="link1 slide" href="https://www.facebook.com/events/1237144609734310/"><span>March with us</span></a><br>
+              <a class="link1 opacity" href="https://www.gofundme.com/march-for-science-ann-arbor">Donate</a>
+</div></div>
         <h2 class="sec04">Apparel</h2>
-        <div id="po">Uh so this closes April 9th so just don't include? Ask about this<br><br><br>
-          <img src="https://assetly.ordermygear.com/images/w_300,h_300,c_pad/58cfe80a08cba6775b8b45e3.png"></div>
-    </div>
+        <div id="po">
+          <div id="capt"><img src="https://assetly.ordermygear.com/images/w_300,h_300,c_pad/58cfe80a08cba6775b8b45e3.png"><div id="info"><h5>Cotton T-Shirt - $20.00</h5></div></div>
+    <br><br><div id="righter">Our store currently has several items for sale. <b>If you want your items to arrive by April 17th, you must order by April 9th.</b> All our proceeds go towards charity and apparel makes a great souvenir!</div></div>
     <script>
     // Sticky Header
     $(window).scroll(function() {
@@ -683,5 +756,17 @@ display:inline-block;
         }, 500);
         event.preventDefault();
     });</script>
+    <script>
+    var $slideLink = $("#slide-link"),
+    slideLinkText = $slideLink.find("span")[0];
+
+$slideLink.on("mouseenter", linkOver);
+
+function linkOver() {
+  TweenLite.to(slideLinkText, 0.3, {y: -25, ease: Cubic.easeIn, onComplete: function() {
+    TweenLite.fromTo(slideLinkText, 0.3, {y: 25}, {y: 0, ease: Cubic.easeOut})
+  }});
+}
+</script>
     </body>
 </html>
