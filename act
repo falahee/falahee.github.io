@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HoliDIY</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="http://static.tumblr.com/b40dda4874dc61eb4ef57d9a17b56043/jpnjrln/nQSokoe7g/tumblr_static_27dvr9m5t5j4w0w4go44g88ko.png"/>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,600italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<style type="text/css">
+
+body {
+    overflow-x:hidden;
+    background-color: #fcfcfc;
+}
+#titlu {
+    font-size:30px;
+    margin-top:8px;
+    margin-left:20px;
+    letter-spacing:-1px;
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    height:66px;
+    color:#fff;
+    position:fixed;
+}
+#titlu a {
+    text-decoration:none;
+}
+#titlu img {
+    background-color:#fff;
+    border-radius: 30px;
+    height:50px;
+    vertical-align:-12px;
+}
+#topbox {
+    top:0;
+    left:0;
+    box-shadow:0px 5px 10px #bbb;
+    height:66px;
+    width:100%;
+    background-color:#00a8ff;
+    position:fixed;
+}
+.navbox {
+    position:fixed;
+    display:inline-block;
+    right:0px;
+}
+.nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:-1px;
+    display: inline-block;
+    top:0;
+    left:0;
+    background: #fcfcfc;
+    border-radius: 3px;
+    border-top: 3px solid #0099ff;
+    border-bottom: 3px solid #0099ff;
+    height: 60px;
+}
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav ul li {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  vertical-align: middle;
+  float: left;
+}
+.nav ul li:first-child,
+.nav ul li:nth-child(2),
+.nav ul li:last-child {
+  border-left: 0;
+}
+.nav ul li:nth-child(2) a:before,
+.nav ul li:nth-last-child(2) a:before,
+.nav ul li:nth-child(2) a:after,
+.nav ul li:nth-last-child(2) a:after {
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.nav ul li:nth-child(2) > a:before {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: -15px;
+  content: '';
+  width: 0;
+  height: 10;
+  display: block;
+  border-right: 15px solid #fcfcfc;
+  border-top: 60px solid transparent;
+}
+.nav ul li:nth-last-child(2) a:after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: -15px;
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  border-left: 15px solid #fcfcfc;
+  border-bottom: 60px solid transparent;
+}
+.nav ul li:last-child a {background: #00a8ff; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0099ff, #00a8ff, #0099ff); /* Standard syntax */
+  padding: 0 25px 0 30px;
+  color: #fcfcfc;
+}
+.nav ul li:last-child a:hover {
+  background: #0099ff;
+}
+.nav ul li a {
+  position: relative;
+  display: block;
+  padding: 0 25px;
+  color: #666666;
+  font-size: 18px;
+  line-height: 60px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.nav ul li a:hover {
+  background: #f2f2f2;
+}
+.nav ul li a:hover:before {
+  border-right: 15px solid #f2f2f2;
+}
+.nav ul li a:hover:after {
+  border-left: 15px solid #f2f2f2;
+}
+.nav ul li a.logo {
+  background: #0099ff;
+  width: 300px;
+  height: 30px;
+  padding: 15px 30px 15px 15px;
+  line-height: 1;
+  vertical-align: middle;
+}
+.nav ul li a.logo:hover {
+  background: #0099ff;
+}
+.nav ul li a.logo img {
+  width: 100%;
+}
+.nav ul li a i {
+  margin: 0 0 0 6px;
+}
+.nav ul li .menu {
+  display: none;
+  position: absolute;
+  background: #fcfcfc;
+  top: 100%;
+  width: 310px;
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 3px solid #0099ff;
+  border-bottom: 3px solid #0099ff;
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
+}
+.nav ul li .menu li {
+  display: block;
+  width: 100%;
+  height: 45px;
+  margin: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.nav ul li .menu li:nth-child(2),
+.nav ul li .menu li:nth-last-child(2) {
+  height: 45px;
+}
+.nav ul li .menu li:nth-child(2) a:before,
+.nav ul li .menu li:nth-last-child(2) a:before,
+.nav ul li .menu li:nth-child(2) a:after,
+.nav ul li .menu li:nth-last-child(2) a:after {
+  content: '';
+  display: none;
+}
+.nav ul li .menu li a {
+  background: #fcfcfc;
+  padding: 0 15px 0 30px;
+  color: #666666;
+  line-height: 45px;
+  text-align: left;
+}
+.nav ul li .menu li a:hover {
+  background: #f2f2f2;
+}
+
+
+#fb a:hover, #fb:hover {
+    color:#3b5998;
+    background: #00a8ff; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0099ff, #00a8ff, #0099ff); /* Standard syntax */
+}
+#g a:hover, #g:hover {
+    color:#d34836;background: #00a8ff; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0099ff, #00a8ff, #0099ff); /* Standard syntax */
+}
+#tw a:hover, #tw:hover {
+    color:#3099cc;
+    background: #00a8ff; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0099ff, #00a8ff, #0099ff); /* Standard syntax */
+}
+
+#fb a, #g a, #tw a, #fb, #g, #tw {
+    text-decoration:none;
+    margin-right:-2px;
+    border:none;
+    letter-spacing:0px;
+    display:inline-block;
+    font-size:21px;
+    -webkit-transition: all .35s ease-in-out 0s;
+    transition: all .35s ease-in-out 0s;
+}
+#fb, #fb a {
+    padding-right:8px;
+}
+#g, #g a {
+    padding-left:0;
+    margin-left:-4px;
+    padding-right:4px;
+}
+#tw, #tw a {
+    margin-left:-2px;
+    padding-left:0;
+}
+
+#titlu {
+    font-size:30px;
+    margin-top:8px;
+    margin-left:20px;
+    letter-spacing:-1px;
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    height:66px;
+    color:#fff;
+    position:fixed;
+}
+bruh {
+    font-size:56px;
+    font-family:montserrat;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color:#C41039;
+	text-align:center;
+    font-weight:bold;
+    text-shadow:1px 1px 2px #fff,3px 3px 1px rgba(196,16,57,0.3)
+}
+#titlu a {
+    text-decoration:none;
+}
+#titlu img {
+    background-color:#fff;
+    border-radius: 30px;
+    height:50px;
+    vertical-align:-12px;
+}
+#topbox {
+    top:0;
+    left:0;
+    box-shadow:0px 5px 10px #bbb;
+    height:66px;
+    width:100%;
+    background: #00a8ff; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0099ff, #00a8ff, #0099ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0099ff, #00a8ff, #0099ff); /* Standard syntax */
+    position:fixed;
+}
+
+</style>
+</head>
+<body>
+<div id="topbox">
+<a href="index.html" id="titlu"><img src="http://static.tumblr.com/b40dda4874dc61eb4ef57d9a17b56043/jpnjrln/nQSokoe7g/tumblr_static_27dvr9m5t5j4w0w4go44g88ko.png"> HoliDIY</a>
+<div class="navbox">
+<div class='nav'>
+  <ul>
+    <li>
+    </li>
+    <li>
+      <a href='index.html'>Home</a>
+    </li>
+    <li>
+      <a href='index.html'>
+        Projects
+        <i class='fa fa-caret-down'></i>
+      </a>
+      <ul class='menu'>
+
+        <li>
+          <a href='merrylettering.html'>merry lettering</a>
+        </li>
+        <li>
+          <a href='holidaycinnamoncookies.html'>Holiday Cinnamon Cookies</a>
+        </li>
+        <li>
+          <a href='festivebrownies.html'>Festive Brownies</a>
+        </li>
+        <li>
+          <a href='pineconetopiary.html'>Pinecone Topiary</a>
+        </li>
+        <li>
+          <a href='paperstars.html'>Paper Stars</a>
+        </li>
+        <li>
+          <a href='paintedbottles.html'>Painted Bottles</a>
+        </li>
+        <li>
+          <a href='pumpkinbread.html'>Pumpkin Bread</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href='submit.html'>Submit</a>
+    </li>
+    <li>
+      <a href='about.html'>About</a>
+    </li>
+    <li>
+        <div id="fb"><a href='https://www.facebook.com/Holidiy-207822239664727/?skip_nax_wizard=true'><i class="fa fa-facebook-square"></i></a></div>
+
+<div id="g"><a href="https://plus.google.com/communities/110337846770855725792"><i class="fa fa-google-plus"></i></a></div>
+<div id="tw"><a href=" https://twitter.com/poosa2016"><i class="fa fa-twitter"></i></a></div>
+    </div>
+    </li>
+  </ul>
+</div>
+</div>
+<bruh><br><br>Project successfully submitted! We will get back to you as soon as possible.</bruh>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    $(".nav li").hover(function () {
+	$(this).children("ul").stop().delay(200).animate({height: "toggle", opacity: "toggle"}, 200);
+});
+</script>
+</body>
+</html>
