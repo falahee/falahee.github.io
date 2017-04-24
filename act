@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+    
+    <meta http-equiv="refresh" content="0; URL='https://www.regulations.gov/document?D=EPA-HQ-OA-2017-0190-0042'" />
+    
+    </head>
+    <body>
+    <script>
+    
+    window.location = "https://www.regulations.gov/document?D=EPA-HQ-OA-2017-0190-0042";
+    window.location.href = "https://www.regulations.gov/document?D=EPA-HQ-OA-2017-0190-0042";
+    window.location.assign("https://www.regulations.gov/document?D=EPA-HQ-OA-2017-0190-0042");
+    window.location.replace("https://www.regulations.gov/document?D=EPA-HQ-OA-2017-0190-0042");
+    
+    </script>
+    </body>
+</html>
